@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
                 listItem.addDiscount();
                 //Log.v(TAG, listItem.name + " price" + listItem.price());
-                return;
+                //return;
             }
         }
         Log.v(TAG, "ERROR discount missing for " + item.name);
