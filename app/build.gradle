@@ -3,12 +3,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion 32
 
     defaultConfig {
         applicationId "p1p.se.megacivilization"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -27,9 +26,11 @@ android {
     buildFeatures {
         viewBinding true
     }
-    lintOptions {
+    namespace 'p1p.se.megacivilization'
+    lint {
         disable 'NotSibling'
     }
+    compileSdk 33
 }
 
 dependencies {
